@@ -16,10 +16,8 @@ const displayDate = () => {
 // Write a JavaScript program to convert a number to a string.
 
 const convertNumToString = (num) => {
-  ourNumberToString = num
-  
-  return document.getElementsById("number-to-string-element").innerHTML =
-  ourNumberToString + " is a " + typeof ourNumberToString
+ let string = numA.toString()
+  document.getElementsById("Number-to-string").innerHTML = string;
 }
 
 // Write a JavaScript program to convert a string to the number.
@@ -39,16 +37,19 @@ console.log(convertStringToNum("hello"))
   // * NaN
   // * String
 
-  function isDataType(arg) {
-    return typeof (arg)
+  const showDataType = (inputStuff) => {
+    inputStuff = document.getElementById("input-stuff").value
+    document.getElementById("type-of-input").innerHTML = typeof inputStuff;
   }
   
+  
 // Write a JavaScript program that adds 2 numbers together.
-const myFunction = (numX, numY) => {
-  sum = (numX + numY);
-  return (sum);
-}
-console.log(myFunction(4,5))
+const numAdd = (a, b) => {
+  a = document.getElementById("value1").value
+  b = document.getElementById("value2").value
+  let sum = parseInt(a) + parseInt(b) ;
+  document.getElementById("add-numbers").innerHTML = sum ;
+  }
 
 
 // Write a JavaScript program that runs only when 2 things are true.
